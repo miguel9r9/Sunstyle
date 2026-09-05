@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleContato.css">
+    <script src="https://kit.fontawesome.com/9596d78199.js" crossorigin="anonymous"></script>
+    <title>SunStyle - Contato</title>
+</head>
+
+<body>
+    <header class="Topo">
+        <div class="Topo-superior">
+            <section class="Logo">
+                <!-- Certifique-se de ajustar o caminho da imagem se necessário -->
+                <img src="Img/sunstyle_logo1.png" alt="Logo SunStyle">
+            </section>
+
+            <nav class="Menu">
+                <a href="index.html">ÍNICIO</a>
+                <a href="indexQSN.html">QUEM SOMOS NÓS?</a>
+                <a href="IndexProdutos.html">PRODUTOS</a>
+                <a href="#" class="ativo">CONTATO</a>
+            </nav>
+
+            <section class="Icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </section>
+        </div>
+
+        <div class="Topo-inferior">
+            <h2>LEVANDO ESTILO, PROTEÇÃO E AVENTURA PARA TODO O BRASIL!</h2>
+        </div>
+    </header>   
+
+    <main class="Principal">
+        <section class="Contato-secao">
+            <div class="Contato-caixa">
+                <h2>ENVIE UMA MENSAGEM</h2>
+                <p>Preencha os campo abaixo e retornaremos em 24 horas.</p>
+                
+                <form id="formContato">
+                    <div class="campo-grupo">
+                        <label for="nome">NOME *</label>
+                        <input type="text" id="nome" required>
+                    </div>
+
+                    <div class="linha-dupla">
+                        <div class="campo-grupo">
+                            <label for="email">E-MAIL *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="campo-grupo">
+                            <label for="telefone">TELEFONE *</label>
+                            <input type="tel" id="telefone" required>
+                        </div>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="assunto">ASSUNTO *</label>
+                        <input type="text" id="assunto" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="mensagem">MENSAGEM *</label>
+                        <textarea id="mensagem" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">ENVIAR</button>
+                </form>
+            </div>
+        </section>
+    </main>
+ 
+    <footer class="Rodape">
+        <div class="Rodape-conteudo">
+            <div class="Rodape-coluna">
+                <h4>ENDEREÇO</h4>
+                <p>SunStyle Indústria de Óculos Ltda. Av. das<br>Palmeiras, 1250 - Distrito Industrial Norte<br>Campinas - SP | CEP: 13056-480</p>
+            </div>
+            <div class="Rodape-coluna">
+                <h4>CONTATO</h4>
+                <p>WhatsApp: (19) 99876-4521<br>E-mail: contato@sunstyle.com.br</p>
+            </div>
+            <div class="Rodape-coluna">
+                <h4>REDES SOCIAIS</h4>
+                <p><i class="fa-brands fa-instagram"></i> @sunstyleoficial</p>
+                <p><i class="fa-brands fa-facebook"></i> facebook.com/SunStyleOficial</p>
+                <p><i class="fa-brands fa-youtube"></i> youtube.com/@SunStyleOficial</p>
+            </div>
+        </div>
+        <div class="Rodape-copyright">
+            <p>Copyright ©2026 SunStyle Indústria de Óculos Ltda. - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para limpar o formulário ao enviar -->
+    <script>
+        document.getElementById("formContato").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o recarregamento da página
+            this.reset(); // Limpa todos os campos do formulário
+        });
+    </script>
+</body>
+</html>
