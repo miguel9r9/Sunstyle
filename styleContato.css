@@ -116,7 +116,7 @@ body {
 }
 
 .Contato-caixa p {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 14px;
     margin-bottom: 30px;
 }
@@ -220,7 +220,7 @@ input, textarea {
 
 .Rodape-coluna p {
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 8px;
     line-height: 1.4;
 }
