@@ -36,7 +36,7 @@ body {
 
 .Principal {
     flex: 1;
-    margin-top: 20px; /* Ajuste o valor em pixels conforme a sua preferência */
+    margin-top: 0; /* Ajuste o valor em pixels conforme a sua preferência */
 }
 
 /* ================= BLOCOS DE INFORMAÇÃO (TEXTO + IMAGEM) ================= */
