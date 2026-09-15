@@ -102,10 +102,11 @@ color: var(--azul-escuro);
 
 .Linha-desc {
     font-size: 12px;
-    font-weight: 800;
+    font-weight: 400; /* Altera de 800 para 400 para remover o negrito */
     line-height: 1.5;
     margin-bottom: 40px;
-    max-width: 80%; /* Para o texto não esticar demais na tela toda */
+    max-width: 100%;  /* Ocupa toda a largura disponível */
+    width: 100%;
 }
 
 /* ================= GRID E CARDS DOS PRODUTOS ================= */
